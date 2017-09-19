@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrap {
+  position: relative;
+  display: block;
+  background-color: #173ed8;
+  height: 100%;
+  width: 100%;
+}
+
+.socials-wrap {
+  position: relative;
+  display: block;
+  background-color: #3a8461;
+  height: 100%;
+  width: 100%;
+}
+
+.page-teaser {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.page-header {
+  position: fixed;
+  background: url('assets/hdr-shadow.png') bottom left no-repeat;
+  height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0 !important;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-inner {
+  background-color: #fff;
+  margin-bottom: 14px;
+  height: 55px;
+}
