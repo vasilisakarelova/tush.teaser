@@ -57,6 +57,8 @@ html, body {
   display: block;
   padding: 0 25px;
   height: 100%;
+  max-width:  1100px;
+  margin: 0 auto;
 }
 
 .socials-headline {
