@@ -79,11 +79,21 @@ html, body {
   text-align: center;
 }
 
-.socials-link a:link,
-.socials-link a:visited,
-.socials-link a:active {
-  color: inherit;
-  text-decoration: underline;
+a,
+a:visited {
+  position: relative;
+  display: block;
+  cursor: url('assets/cursor-pointer.png'), auto;
+}
+
+.cover-post-image img {
+  transition: all .2s ease-in;
+}
+
+.cover-post-image:hover img {
+  filter: blur(0);
+  opacity: .75;
+  transform: scale(.85) !important;
 }
 
 .socials-instagram,

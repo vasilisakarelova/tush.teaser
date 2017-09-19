@@ -1,6 +1,6 @@
-var token = '279756912.0c55dc1.9e4e7b1f0df743aeb8f2683058899716'
-var userid = 279756912
-var num = 9
+var token = '611768430.9e40ee6.ed28a58ce97948389668289eec853a25'
+var userid = 611768430
+var num = 6
 
 $.ajax({
 	url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
