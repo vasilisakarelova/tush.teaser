@@ -1,4 +1,7 @@
 /fonts/BBfam
 /fonts/drukfam
 
+/assets/Cover
+/assets/*.zip
+
 .DS_Store
