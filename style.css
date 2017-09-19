@@ -68,7 +68,6 @@ html, body {
 .socials-group {
   position: relative;
   display: block;
-  margin-top: 100px;
 }
 
 .socials-link {
@@ -87,13 +86,15 @@ html, body {
   text-decoration: underline;
 }
 
-.socials-body {
+.socials-instagram,
+.socials-covers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .socials-box {
@@ -130,12 +131,12 @@ html, body {
   transform: translate(-50%, -50%)
 }
 
-.instagram-post-image img.portrait {
+img.portrait {
   height: auto;
   width: 100%;
 }
 
-.instagram-post-image img.landscape {
+img.landscape {
   height: 100%;
   width: auto;
 }

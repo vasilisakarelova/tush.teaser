@@ -11,9 +11,9 @@ $.ajax({
  		console.log(data)
 		for( x in data.data ){
       if (data.data[x].images.low_resolution.height > data.data[x].images.low_resolution.width) {
-        $('.socials-body').append('<div class="socials-box"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+        $('.socials-instagram').append('<div class="socials-box"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
       } else {
-        $('.socials-body').append('<div class="socials-box"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+        $('.socials-instagram').append('<div class="socials-box"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
       }
       // data.data[x].images.low_resolution.url - URL of image, 306х306
 			// data.data[x].images.thumbnail.url - URL of image 150х150
