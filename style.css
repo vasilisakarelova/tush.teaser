@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 
 .page-teaser {
@@ -62,6 +63,28 @@ html, body {
   margin: 0;
   font-family: 'BB Roller';
   text-align: center;
+}
+
+.socials-group {
+  position: relative;
+  display: block;
+  margin-top: 100px;
+}
+
+.socials-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-family: 'BB Roller';
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.socials-link a:link,
+.socials-link a:visited,
+.socials-link a:active {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .socials-body {
