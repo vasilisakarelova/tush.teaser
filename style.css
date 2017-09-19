@@ -5,27 +5,99 @@ html, body {
   height: 100%;
 }
 
-.video-wrap {
-  position: relative;
-  display: block;
-  background-color: #173ed8;
-  height: 100%;
-  width: 100%;
-}
-
-.socials-wrap {
-  position: relative;
-  display: block;
-  background-color: #3a8461;
-  height: 100%;
-  width: 100%;
-}
-
 .page-teaser {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
+  cursor: url('assets/cursor-pointer.png'), auto;
+}
+
+.video-wrap {
+  position: relative;
+  display: block;
+  background-color: #183cd1;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  display: block;
+  padding: 0 100px;
+  height: 100%;
+}
+
+.socials-wrap {
+  position: relative;
+  display: block;
+  background-color: #00993b;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.socials-container {
+  position: relative;
+  display: block;
+  padding: 0 100px;
+  height: 100%;
+}
+
+.socials-headline {
+  margin: 0;
+  font-family: 'BB Roller';
+  text-align: center;
+}
+
+.socials-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.socials-box {
+  width: 44%;
+  margin: 0;
+  text-align: inherit;
+  z-index: 10012;
+  width: 15em;
+  flex: 0 0 15em;
+  padding: 10px;
+}
+
+.socials-box img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block
+}
+
+.instagram-post-image {
+  position: relative;
+  width: 15em;
+  height: 15em;
+  overflow: hidden
+}
+
+.instagram-post-image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%)
+}
+
+.instagram-post-image img.portrait {
+  height: auto;
+  width: 100%;
+}
+
+.instagram-post-image img.landscape {
+  height: 100%;
+  width: auto;
 }
 
 .page-header {
