@@ -8,24 +8,36 @@ html, body {
 .page-teaser {
   position: absolute;
   top: 0;
+  padding-top: 55px;
   height: 100%;
   width: 100%;
   cursor: url('assets/cursor-pointer.png'), auto;
+}
+
+.video-holder {
+  position: relative;
+  padding: 50px;
+  display: block;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 960px;
+  height: 540px;
 }
 
 .video-wrap {
   position: relative;
   display: block;
   background-color: #183cd1;
-  height: 100%;
   width: 100%;
 }
 
 .video-container {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0 100px;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .socials-wrap {
