@@ -1,1 +1,2 @@
-tush.teaser
+# tush magazine
+*teaser page
