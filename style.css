@@ -25,6 +25,10 @@ html, body {
   height: 540px;
 }
 
+.video-holder video {
+  cursor: default;
+}
+
 .video-wrap {
   position: relative;
   display: block;
