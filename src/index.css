@@ -290,6 +290,43 @@ img.landscape {
   background-color: #fff;
   margin-bottom: 14px;
   height: 55px;
+  position: relative;
+  display: flex;
+  cursor: default;
+}
+
+.header-logo {
+  font-family: 'Tush';
+  font-weight: 800;
+  font-size: 1.5em;
+  white-space: nowrap;
+  line-height: 55px;
+  padding-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+  white-space: nowrap;
+  line-height: 55px;
+}
+
+.header-link {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding-right: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.header-link:active,
+.header-link:visited,
+.header-link:link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .coming-soon {
