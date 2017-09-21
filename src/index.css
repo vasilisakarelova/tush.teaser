@@ -5,14 +5,50 @@ html, body {
   height: 100%;
   font-size: 16px;
   font-family: 'BB Roller';
+  cursor: url('../assets/cursor-pointer.png'), auto;
+}
+
+#loading-wrap {
+  position: fixed;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+}
+
+.loading-img {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30vw;
+  height: auto;
+  opacity: 1;
+  transition: all .3s ease-out;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+.fade-out {
+  opacity: 0;
+  z-index: -1 !important;
 }
 
 .page-teaser {
+  opacity: 0;
+  transition: all .3s ease-out;
+  height: 0;
   position: absolute;
   top: 0;
-  height: 100%;
+  padding-top: 55px;
   width: 100%;
-  cursor: url('../assets/cursor-pointer.png'), auto;
 }
 
 .video-holder {
@@ -78,10 +114,15 @@ html, body {
   text-align: center;
 }
 
+.socials-headline {
+  font-size: 1.7em;
+  line-height: 1.7em;
+}
+
 .socials-sub-headline {
-  font-size: 1.2em;
-  line-height: 1.2em;
-  margin-top: 1.2em;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  margin-top: 1em;
 }
 
 .socials-group {
@@ -119,7 +160,7 @@ a:visited {
   position: relative;
   margin: 0;
   text-align: inherit;
-  z-index: 10012;
+  z-index: 99;
   padding: 10px;
   width: 25em;
   flex: 0 0 25em;
@@ -179,7 +220,7 @@ a:visited {
 .socials-box {
   margin: 0;
   text-align: inherit;
-  z-index: 10012;
+  z-index: 99;
   padding: 10px;
   width: 10em;
   flex: 0 0 10em;
@@ -224,24 +265,61 @@ img.landscape {
 }
 
 .page-header {
-  display: none;
+  display: block;
   position: fixed;
   background: url('../assets/hdr-shadow.png') bottom left no-repeat;
   height: 70px;
   text-transform: uppercase;
   margin-bottom: 2px;
   overflow: hidden;
-  position: relative;
   top: 0;
   right: 0 !important;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
 }
 
 .header-inner {
   background-color: #fff;
   margin-bottom: 14px;
   height: 55px;
+}
+
+.coming-soon {
+  position: relative;
+  display: block;
+  height: auto;
+  padding-bottom: 100px;
+  background: #fef734;
+}
+
+.coming-soon a:link,
+.coming-soon a:visited,
+.coming-soon a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.coming-soon a {
+  transition: all .3s ease-in-out;
+}
+
+.coming-soon a:hover {
+  transform: scale(.8);
+}
+
+.coming-soon-loop {
+  position: relative;
+  display: block;
+  height: 60%;
+  width: auto;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.loop-wrap {
+  position: relative;
+  display: block;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -269,6 +347,11 @@ img.landscape {
   .instagram-post-image {
     width: 20em;
     height: 20em;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 

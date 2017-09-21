@@ -25,3 +25,17 @@ $.ajax({
 		console.log(data) // send the error notifications to console
 	}
 });
+
+document.addEventListener('click', () => {
+	document.querySelector('#intro').play()
+	document.querySelector('#loading-wrap').classList.add('fade-out')
+	document.querySelector('.page-teaser').classList.add('fade-in')
+	document.querySelector('.page-teaser').style.height = 'auto'
+})
+
+setTimeout(function() {
+	document.querySelector('#intro').play()
+	document.querySelector('#loading-wrap').classList.add('fade-out')
+	document.querySelector('.page-teaser').classList.add('fade-in')
+	document.querySelector('.page-teaser').style.height = 'auto'
+}, 3500)
