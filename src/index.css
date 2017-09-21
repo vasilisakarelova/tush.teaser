@@ -172,6 +172,10 @@ a:visited {
   margin-bottom: 150px;
 }
 
+.collage {
+  margin-bottom: 250px;
+}
+
 .socials-box {
   margin: 0;
   text-align: inherit;
@@ -253,7 +257,7 @@ img.landscape {
 
   .socials-box-ig {
     width: 20em;
-    flex: 0 0 20em;
+    height: 20em;
   }
 
   .collage-box {
