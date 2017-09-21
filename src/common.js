@@ -8,12 +8,13 @@ $.ajax({
 	type: 'GET',
 	data: {access_token: token, count: num},
 	success: function(data){
- 		console.log(data)
 		for( x in data.data ){
       if (data.data[x].images.low_resolution.height > data.data[x].images.low_resolution.width) {
-        $('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+        //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="assets/contest/' + x + '.jpeg" /></div><div class="collage-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
       } else {
-        $('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+        //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
+				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="assets/contest/' + x + '.jpeg" /></div><div class="collage-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
       }
       // data.data[x].images.low_resolution.url - URL of image, 306х306
 			// data.data[x].images.thumbnail.url - URL of image 150х150
