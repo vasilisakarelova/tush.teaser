@@ -34,9 +34,12 @@ document.addEventListener('click', () => {
 	document.querySelector('.page-teaser').style.height = 'auto'
 })
 
-setTimeout(function() {
-	document.querySelector('#intro').play()
-	document.querySelector('#loading-wrap').classList.add('fade-out')
-	document.querySelector('.page-teaser').classList.add('fade-in')
-	document.querySelector('.page-teaser').style.height = 'auto'
-}, 3500)
+var vid = document.querySelector('#intro')
+vid.oncanplay = function() {
+	setTimeout(function() {
+		document.querySelector('#intro').play()
+		document.querySelector('#loading-wrap').classList.add('fade-out')
+		document.querySelector('.page-teaser').classList.add('fade-in')
+		document.querySelector('.page-teaser').style.height = 'auto'
+	}, 3000)
+};
