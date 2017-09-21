@@ -26,7 +26,9 @@
 
     <meta property="og:image" content="/sites/all/themes/tush2014/assets/images/tush_512x512.png">
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
   </head>
   <body>
     <header id="page-header" class="page-header" role="banner">
@@ -45,11 +47,11 @@
       <section class="video-wrap">
         <div class="video-container">
           <div class="video-holder" data-video-holder="">
-            <video id="intro" width="100%" height="100%" controls loop="">
-                <source src="JB175_Tush_Zombie_Offline_Trailer_1_v7.mp4" type="video/mp4">
+            <video id="intro" width="100%" height="100%" loop src="assets/teaser/TUSH02.mov">
             </video>
+            <img class="intro-fallback" alt="intro fallback" src="assets/teaser/TUSH02.gif" />
           </div>
-          <div class="video-credits">
+          <div class="video-credits" style="display:none;">
             <div class="credits-wrap">
               <p>
                 Foto &amp; Realisation ARMIN MORBACH<br>
@@ -70,8 +72,7 @@
       </section>
       <section class="socials-wrap covers">
         <div class="socials-container">
-          <h1 class="socials-headline">TUSH EXTREME OUT NOW</h1>
-          <h1 class="socials-headline">ORDER YOUR COPY NOW</h1>
+          <a href="http://store.tushmagazine.com" target="_blank"><h1 class="socials-headline">ORDER YOUR COPY HERE</h1></a>
           <div class="socials-covers">
             <div class="socials-box">
               <div class="cover-post-image">
@@ -117,10 +118,11 @@
         </div>
       </section>
       <section class="socials-wrap contest">
-        <div class="socials-container">
-          <h1 class="socials-headline">LOOK, COUTURE!</h1>
-          <h2 class="socials-sub-headline">Mit YVES SAINT LAURENT BEAUTY und sechs Top-Artists entsteht aus Make-up beeindruckende Face-Couture</h2>
-          <p>Für Couture in der Mode gibt es eine eindeutige Definition — für Make-up nicht. Bisher. TUSH und YVES SAINT LAURENT BEAUTY haben sechs deutschen Top-Artists für Make-up diese Frage gestellt: „Wie sieht Face-Couture aus?“ Liebe zum Detail, Glamour, Handwerk in Perfektion, beste Materialien und viel Kreativität — das hebt Make-up zur Couture und den Look vom Mainstream ab. Edel, aber lässig - Luxury Coolness eben. Aber genau wie in der Mode gibt es auch hier verschiedene Stilrichtungen: von Rock ’n’ Roll bis glamourös. Stimme jetzt für deinen Face-Couture-Favoriten ab!</p>
+        <div class="socials-container-contest">
+          <h1 class="socials-headline contest">LOOK, COUTURE!</h1>
+          <h2 class="socials-sub-headline">Mit YVES SAINT LAURENT BEAUTY und sechs Top-Artists  entsteht aus Make-up beeindruckende Face-Couture</h2>
+          <p style="margin-bottom: 5em;">Für Couture in der Mode gibt es eine eindeutige Definition — für Make-up nicht. Bisher. TUSH und YVES SAINT LAURENT BEAUTY haben sechs deutschen Top-Artists für Make-up diese Frage gestellt: „Wie sieht Face-Couture aus?“ Liebe zum Detail, Glamour, Handwerk in Perfektion, beste Materialien und viel Kreativität — das hebt Make-up zur Couture und den Look vom Mainstream ab. Edel, aber lässig - Luxury Coolness eben. Aber genau wie in der Mode gibt es auch hier verschiedene Stilrichtungen: von Rock ’n’ Roll bis glamourös. Stimme jetzt für deinen Face-Couture-Favoriten ab!</p>
+          <h1 class="socials-headline">VOTE NOW</h1>
           <div class="collage">
           </div>
         </div>
@@ -128,7 +130,6 @@
       <section class="socials-wrap instagram">
         <div class="socials-container">
           <h1 class="socials-headline">SWALLOW US</h1>
-          <h1 class="socials-headline">ON INSTAGRAM</h1>
           <div class="socials-instagram">
             <div class="socials-box socials-box-ig">
               <div class="instagram-post-image">
@@ -161,6 +162,7 @@
               </div>
             </div>
           </div>
+          <h1 class="socials-headline">ON INSTAGRAM</h1>
         </div>
       </section>
       <div class="coming-soon">

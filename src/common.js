@@ -11,10 +11,10 @@ $.ajax({
 		for( x in data.data ){
       if (data.data[x].images.low_resolution.height > data.data[x].images.low_resolution.width) {
         //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
-				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
+				$('.collage').append('<div class="collage-box"><a style="height:100%;"href="'+data.data[x].link+'"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div><p class="collage-post-caption">' + data.data[x].caption.text + '</p></a></div>')
       } else {
         //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
-				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
+				$('.collage').append('<div class="collage-box"><a style="height:100%;"href="'+data.data[x].link+'"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div><p class="collage-post-caption">' + data.data[x].caption.text + '</p></a></div>')
       }
       // data.data[x].images.low_resolution.url - URL of image, 306х306
 			// data.data[x].images.thumbnail.url - URL of image 150х150
@@ -25,6 +25,29 @@ $.ajax({
 	error: function(data){
 		console.log(data) // send the error notifications to console
 	}
+});
+
+$(document).ready(function(){
+  $('.socials-covers').slick({
+    variableWidth: true,
+		infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+		slidesToScroll: 2,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1000
+  });
+
+	$('.socials-instagram').slick({
+    variableWidth: true,
+		infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1000
+  });
 });
 
 document.addEventListener('click', () => {
