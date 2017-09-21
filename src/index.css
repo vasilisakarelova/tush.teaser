@@ -187,7 +187,15 @@ a:visited {
   top: 50%;
   height: 100%;
   width: auto;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  transition: all .2s ease-in;
+}
+
+.collage-post-image:hover img {
+  filter: blur(0);
+  opacity: .75;
+  transform: translate(-50%, -50%) scale(.85) !important;
 }
 
 .collage-bg {
