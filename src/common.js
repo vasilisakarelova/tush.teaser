@@ -11,10 +11,10 @@ $.ajax({
 		for( x in data.data ){
       if (data.data[x].images.low_resolution.height > data.data[x].images.low_resolution.width) {
         //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
-				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="assets/contest/' + x + '.jpeg" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
+				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="portrait" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
       } else {
         //$('.socials-instagram').append('<div class="socials-box socials-box-ig"><div class="instagram-post-image"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></div></div>')
-				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="assets/contest/' + x + '.jpeg" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
+				$('.collage').append('<div class="collage-box"><div class="collage-bg"><img class="portrait" src="' + data.data[x].images.standard_resolution.url + '" /></div><div class="collage-post-image"><a style="height:100%;"href="'+data.data[x].link+'"><img class="landscape" src="'+data.data[x].images.low_resolution.url+'"></a></div></div>')
       }
       // data.data[x].images.low_resolution.url - URL of image, 306х306
 			// data.data[x].images.thumbnail.url - URL of image 150х150
