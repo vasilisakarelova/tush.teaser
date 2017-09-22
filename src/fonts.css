@@ -36,3 +36,12 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Druk Text Bold';
+	src: url('../fonts/min/DrukText-Bold.woff2') format('woff2'),
+		url('../fonts/min/DrukText-Bold.woff') format('woff'),
+		url('../fonts/min/DrukText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
