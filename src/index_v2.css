@@ -1,3 +1,8 @@
+.collage-post-caption a {
+  height: auto !important;
+  display: initial;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -140,7 +145,7 @@ html, body {
 }
 
 .socials-headline {
-  font-size: 2.7em;
+  font-size: 1.9em;
   line-height: 1.2em;
   font-family: 'Tush';
 }
@@ -225,7 +230,7 @@ a:visited {
   margin: auto;
   background: yellow;
   transition: all .3s ease-in;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 15px;
   height: 60%;
   width: 80%;
@@ -431,6 +436,13 @@ img.landscape {
   height: 100vh;
 }
 
+@media only screen and (min-width: 414px) {
+  .socials-headline {
+    font-size: 2.7em;
+    line-height: 1.2em;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .video-credits {
     padding: 0 50px;
@@ -497,4 +509,11 @@ img.landscape {
   .socials-container-contest {
     padding: 0 100px;
   }
+}
+
+@media only screen and (min-width: 984px) {
+  .collage-post-caption {
+    font-size: 15px;
+  }
+
 }

@@ -2,25 +2,6 @@ var token = '611768430.9e40ee6.ed28a58ce97948389668289eec853a25'
 var userid = 611768430
 var num = 8
 
-var contestPostIDs = ['1608630387419205805_611768430', '1608629139085455010_611768430', '1608627910221294520_611768430', '1608626411915238457_611768430', '1608623289507720508_611768430', '1608621909925614877_611768430']
-contestPostIDs.forEach(function(contestPostID) {
-	$.ajax({
-		url: 'https://api.instagram.com/v1/media/' + contestPostID + '?access_token=' + token + '',
-		dataType: 'jsonp',
-		type: 'GET',
-		success: function(response){
-			if (response.data.images.low_resolution.height > response.data.images.low_resolution.width) {
-				$('.collage').append('<div class="collage-box"><a style="height:100%;"href="'+response.data.link+'"><div class="collage-bg"><img class="portrait" src="' + response.data.images.standard_resolution.url + '" /></div><div class="collage-post-image"><img class="portrait" src="'+response.data.images.low_resolution.url+'"></div><p class="collage-post-caption">' + response.data.caption.text + '</p></a></div>')
-      } else {
-				$('.collage').append('<div class="collage-box"><a style="height:100%;"href="'+response.data.link+'"><div class="collage-bg"><img class="portrait" src="' + response.data.images.standard_resolution.url + '" /></div><div class="collage-post-image"><img class="landscape" src="'+response.data.images.low_resolution.url+'"></div><p class="collage-post-caption">' + response.data.caption.text + '</p></a></div>')
-      }
-		},
-		error: function(data){
-			console.log(data) // send the error notifications to console
-		}
-	});
-})
-
 $.ajax({
 	url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
 	dataType: 'jsonp',
